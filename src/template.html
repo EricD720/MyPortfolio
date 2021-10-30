@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+
+    <!-- Put here your site title -->
+    <title>Eric Durand | Web Developer</title>
+    <meta name="keywords" content="[username], [name], skill" />
+   
+    <meta name="description" content="[Your name here] | Developer" />
+
+    <!-- Required librarys -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal({ reset: false });
+    </script>
+  </head>
+
+  <!-- Follow the HTML instructions to create your stunning portfolio website -->
+  <body>
+    <div id="top"></div>
+
+    <!-- **** Hero Section **** -->
+    <div id="hero" class="jumbotron">
+      <div class="container">
+        <h1 class="hero-title" class="load-hidden">
+          Hi, my name is <span class="text-color-main">Eric Durand</span>
+          <br />
+          I'm your next web Developer.
+        </h1>
+        <p class="hero-cta" class="load-hidden">
+          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
+            >Get to know me!</a
+          >
+        </p>
+      </div>
+    </div>
+    <!-- /END Hero Section -->
+
+    <!-- **** About Section **** -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About me</h2>
+        <div class="row about-wrapper">
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__image">
+              <img
+                alt="Profile Image"
+                class="img-fluid rounded shadow-lg"
+                height="auto"
+                width="300px"
+                src="assets/profile.jpg"
+                alt="Profile Image"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__info">
+              <p class="about-wrapper__info-text">
+                Since I was a kid I always had an interest in computers and technology, 
+                but my official education led me elsewhere. 
+
+                During my teenaged years, I enrolled in several classes that exposed me to web development and coding. 
+                I kept that interest with me throughout my life.  Even while in college studying psychology, 
+                I enrolled in a computer science Java class out of interest to further my knowledge of programming.
+                I have also built and optimized many personal computer workstations
+             </p>
+                <p class="about-wrapper__info-text">
+                 I hold a bachelors of science in Psychology.  I have been working in the field of medicine for the past 9 years.
+                 Even while working in medicine, the pull of technology was always there especially seeing how tech has become integrated into medicine.
+                 My knowledge of tech, and willingness to solve tech issues earned me the reputation of being unofficial rapid IT response person of my office.  I enjoyed doing this so much that 
+                 I eventually decided to dedicate my spare time to teaching and reaquainting myself with the appropriate technologies to become a Web Developer.  Take a look at the below
+                 projects and exercises I worked on!
+                           
+              </p>
+              <p class="about-wrapper__info-text">
+                 I consider myself to be an easy going, goal oriented individual.  I work well in a fast pace environment, and can work very well either independentaly or as part of a team. I am always
+                 open to learning something new to improve myself.  I love eatting any kind of spanish food, chicken wings, and some good french pressed coffee.
+              </p>
+              <span class="d-flex mt-3">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--resume"
+                  href=""
+                >
+                  View Resume
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END About Section -->
+
+    <!-- **** Projects Section **** -->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Projects</h2>
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Calculator</h3>
+                <div>
+                  <p class="mb-4">
+                    This exercise is a fully functional web Calculator.  CSS is use to guide the user experience 
+                    by using hover effects to show the buttons are functional, and providing feedback on button activation.
+                    CSS Grid is used to properly organize the button.  A scroll bar was impleneted using overflow-X in the CSS,
+                    and a scroll wheel webkit for a better looking scroll bar on windows machines.  DOM manipulation is used to change the display based on user input.  
+                    A terinary operator is used to allow to add more numbers on the caluator display.  Javascript runs the calculator logic to perform mathimatical operations, and update the display to show the result.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://ericd720.github.io/basic-calculator/"
+                >
+                  See Live
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/EricD720/basic-calculator"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a rel="noreferrer" href="https://ericd720.github.io/basic-calculator/" target="_blank">
+                  <div data-tilt class="thumbnail rounded js-tilt">
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/Calculator.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Picture in Picture</h3>
+                <div>
+                  <p class="mb-4">
+                    This exercise is a picture in picture web app.
+                    It utilizes the screen capture API's getDisplayMedia method to prompt the user to select a window to cast the contents of its display.
+                    The function is an async function that will await the user to select the display they are wanting to share.
+                    The media stream is passed into the video object as its source. The video will then begin to play in a picture in picture window.
+                    Sadly this will not work on a mobile device as most of the screen capture API is not compatible with mobile device web browsers.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://ericd720.github.io/Picture_in_picture/"
+                >
+                  See Live
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/EricD720/Picture_in_picture"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a rel="noreferrer" href="https://ericd720.github.io/Picture_in_picture/" target="_blank">
+                  <div data-tilt class="thumbnail rounded js-tilt">
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/pictureinpicture.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Joke Teller</h3>
+                <div>
+                  <p class="mb-4">
+                    This web page is a funny one. 
+                    It tells Jokes!  An animated GIF is used as the background of the page.  When the "tell me a joke button" is clicked,
+                    a fetch request is sent to a joke API that is being used.  An async function is used to await the data being fetched.  
+                    Once recieved the data is then passed into a variable that is then passed into a speech API that is bneing used to tell the joke to the user auditorily.
+                    The free open source text to speech API was written in to the Javascript using the API's Source Development Kit.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://ericd720.github.io/Joke-teller/"
+                >
+                  See Live
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/EricD720/Joke-teller"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a rel="noreferrer" href="https://ericd720.github.io/Joke-teller/" target="_blank">
+                  <div data-tilt class="thumbnail rounded js-tilt">
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/JokeTeller.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Dynamic Light and Dark theme</h3>
+                <div>
+                  <p class="mb-4">
+                    This exercise is a web page that changes themes from a light theme to a dark theme.  It uses the font awesome CDN for the icons.
+                    There are two sets of CSS variables with the colors assigned for each theme.   Depending on the selected theme, 
+                    the font awesome icon on the right of hte nav bar will change from a sun to a moon or vice versa.  
+                    The scroll animation is actually a checkbox input that has been stlyed to resemble a circle that animates from left to right when checked.
+                    When the input is unchecked, it triggers the light mode them.  When checked, it triggers the dark mode theme.  
+                    Javascript is used to facilitate the theme switching by DOM manipulation.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://ericd720.github.io/Dynamic_light_dark_theme/"
+                >
+                  See Live
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/EricD720/Dynamic_light_dark_theme"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a rel="noreferrer" href="https://ericd720.github.io/Dynamic_light_dark_theme/" target="_blank">
+                  <div data-tilt class="thumbnail rounded js-tilt">
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/LightModeDarkMode1.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Bookmarks-page</h3>
+                <div>
+                  <p class="mb-4">
+                    This exercise is a a Book keeper web app, much like your typical browser favorites or bookmarks section.  
+                    You can click on the links to open a new browser tab to the web site that has been bookmarked.
+                    The favicons are being populated dynamically using string template literal
+                    When the add bookmark button is activated, a modal is triggered to prompt the user to add the information for the bookmark.
+                    Form validation logic is used to handle the entered data (make sure the website URL follows the standard HTTP format) and validate the entry
+                    The bookmarks are then saved to local storage as a JSON object that can be fetched and set as the user adds more bookmarks.  The user may also
+                    remove a book mark that will remove that object from local storage.  Everytime a new bookmark is added or deleted,
+                     the DOM is manipulated to add or remove the bookmark card.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://ericd720.github.io/bookmarks-page/"
+                >
+                  See Live
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/EricD720/bookmarks-page"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a rel="noreferrer" href="https://ericd720.github.io/bookmarks-page/" target="_blank">
+                  <div data-tilt class="thumbnail rounded js-tilt">
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/bookmarkPage.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Video Player</h3>
+                <div>
+                  <p class="mb-4">
+                    This exercise is a video player.
+                    HTML is used to make the video layout using font awesome for all of the video icons
+                    An open source asset is used for the video and can be changed to any other video a developer wishes to use.
+                    The progress bar is DIV element that was styled to resemble a progress bar
+                    CSS is used to position the container with the controls, the hover behavior, and the progress bar.
+                    Javascript use to create video playback functionality via several event listeners (click, canplay, timeupdate, change).  The video pauses, plays, enlarges to full screen,
+                    has volume control, and playback speed. The progress bar updates as the video plays, and it is when clicked, the video will 
+                    time skip to the point that was clicked.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://ericd720.github.io/Video-player/"
+                >
+                  See Live
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/EricD720/Video-player"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a rel="noreferrer" href="https://ericd720.github.io/Video-player/" target="_blank">
+                  <div data-tilt class="thumbnail rounded js-tilt">
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/videoPlayer.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Form Validator</h3>
+                <div>
+                  <p class="mb-4">
+                    This exercise is in form validation on the front end using the built in HTML validation and javascript.
+                    The container was centered and styled to resemble a sign up form with red outlines around each input field.
+                    HTML attributes were used to have placeholder text in each text box and the required attribute assign the desired text and patterns
+                    (for example, the pattern of a phone number with the dashes and amount of digits).
+                    Javascript is also used to assist in validation using the checkValidity method.  There is a nested if else statement that will evaluate
+                    each input field to determine validity, and change the border color to either red of green and display a feedback message.
+                    once the submit event is triggered in the event listener for the form, the javascript validation is run.  If all fields are valid, the data would 
+                    then be stored.
+                    The form will not pass the data onto backend unless all input fields have been completed correctly as specified by our custom validation and javascript
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://ericd720.github.io/form-validation/"
+                >
+                  See Live
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/EricD720/form-validation"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a rel="noreferrer" href="https://ericd720.github.io/form-validation/" target="_blank">
+                  <div data-tilt class="thumbnail rounded js-tilt">
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/formValidation.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Rock paper scissor</h3>
+                <div>
+                  <p class="mb-4">
+                    This exercise is my first attempt at game logic.
+                    I use two free third party sources to import and require to make this app functional.
+                    The javascript uses the math.random method to have numbers chosen at random.
+                    The computer choice is a nested if else funtion with different threshholds that is assigned to each choice.
+                    If a the value of the decimal is below or equal to a certain established threshold, the value is assigned based on that.
+                    the rules of the game are objects that have several key value pairs that describe which choice defeats the other. They are defined as strings
+                    the strings are chosen based on the decimal resulted on math.random.  A Javascript switch statment is used to determine
+                    which case is being used based on the play player selection, and will determine the icon change and which rule will be played against the randomly
+                    generated number.  The game will keep track of the ammount of victories each side has, and display confetti animation if the player wins.  There is also a 
+                    reset button that will reset the game entirely to the intial onload values.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://ericd720.github.io/rock-paper-scissors1/"
+                >
+                  See Live
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/EricD720/rock-paper-scissors1"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div data-tilt class="thumbnail rounded js-tilt">
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/rockPaperScissors2.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Infinite Scroll</h3>
+                <div>
+                  <p class="mb-4">
+                    This exercise is a web page that uses infinite scroll, which is similar to what popular platforms like instagram and twitter use.
+                    It uses the unsplash API to supply the data and images for hte content.
+                    A free resource is used to have a loader animation that is shown in place while the API is being called to fetch the photos.
+                    CSS is used to center all of the elements on the page.  
+                    The javascript calls the API using the fetch method within an async function.  The elements are and dynamically created within the DOM using the forEach method.
+                    There is an eventlistener listening for the scroll event and constantly evaluating the position of the Y-axis.  Once it reaches a certain hight, 
+                    a new call is made to the API for more images which dynamically loads creating the look of an infinite scroll.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://ericd720.github.io/infinite_scroll/"
+                >
+                  See Live
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/EricD720/infinite_scroll"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a rel="noreferrer" href="https://ericd720.github.io/infinite_scroll/" target="_blank">
+                  <div data-tilt class="thumbnail rounded js-tilt">
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/infiniteScrollAPI.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">NASA APOD</h3>
+                <div>
+                  <p class="mb-4">
+                    This web app uses the free NASA API to pull random astronomy pictures of the day
+                    The results are formatted into cards with an image, title, "add to favorites button" description, date and copy right information.
+                    A custom loading animation was incorporated as an overlay from a 3rd party resource that will show while data is being fetched from 
+                    the API and stored into an array.
+                    CSS was used to center the loader container over the card container using position fixed, and a Z-index of 10.
+                    When the web site is launched, the loading animation is shown while the NASA API is pinged to fetch information using an async function.
+                    the DOM is then manipulated.  A forEach method is used to loop over the array with the NASA API informtation to then create the elements
+                    and add classes and attributes.  To improve loading time, lazy loading is used for the images.  When all of the elements are created, the information
+                    is then appended into the DOM. Local storage is used to add cards to favorite using the setItem method.  When a card is added to favorite,
+                    a confirmation message is flashed on the bottom right for two seconds showing it has been added using the setTimeout method.
+
+
+
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://ericd720.github.io/NASA-APOD/"
+                >
+                  See Live
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/EricD720/NASA-APOD"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a rel="noreferrer" href="https://ericd720.github.io/NASA-APOD/" target="_blank">
+                  <div data-tilt class="thumbnail rounded js-tilt">
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/nasaAPI.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Drag and Drop</h3>
+                <div>
+                  <p class="mb-4">
+                    This is a kanban board web page that has drag and drop functionality.
+                    The columns are an unordered list within an a div container that has been styled to resemble a card box.
+                    with a button added within the list item that has functionality built in to use DOM manipulation to create an input text box when activated.
+                    Once text has been added, javascript will dynamically add a list item into another unordered list withing the column.
+                    The javascript also has functionality that will allow the user to click, drag, and drop the list item into other
+                    labeled colums allowing the user to track progress of any given task.
+                    Each column has an empty array assigned to it that will contain content.
+                    When text is added, the push method is used to add the item into the column's assigned array index.
+                    The DOM is then manipulated, and the element created using the setAttribute method.
+                    To update the DOM, the forEach method was used to check the indecies of the array of each column and pass its value into a new element.
+                    a function was then created that uses a for loop to push the values of the new element
+                    To delete, the user would just delete the text from the box
+                    which would automatically remove that list item.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://ericd720.github.io/drag-and-drop/"
+                >
+                  See Live
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/EricD720/drag-and-drop"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a rel="noreferrer" href="https://ericd720.github.io/drag-and-drop/" target="_blank">
+                  <div data-tilt class="thumbnail rounded js-tilt">
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/KanbanBoardDragandDrop.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Splash Page</h3>
+                <div>
+                  <p class="mb-4">
+                    This is a splash page
+                    This exercise simulates the process of working with a designer through the Figma platform in order to create a splash page.
+                    FIGMA allows designers to share the assets with developers as well as specifying CSS styling for said assets. 
+                    This allows for an easy way to hand off from a designer to a developer in order to create a live website.
+                    Three toggles were also added to the top that allow users to change the background.  The background change is facilitated using a switch statement
+                    in javascript that will trigger a CSS class change to different themes.  An if statement also facilitates the CSS class reset to go back to the
+                    original background color.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://ericd720.github.io/splash-page/"
+                >
+                  See Live
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/EricD720/splash-page"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a rel="noreferrer" href="https://ericd720.github.io/splash-page/" target="_blank">
+                  <div data-tilt class="thumbnail rounded js-tilt">
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/SplashPage1.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Custom Countdown</h3>
+                <div>
+                  <p class="mb-4">
+                    This exercise is a countdown timer.
+                    A video is being used for the background.
+                    The user is prompted to create a custome countdown and enter a title, and select a date.
+                    Once the date and title are set, the display changes to show a count down.
+                    When the countdown reaches zero, the display changes showing an complete message that has been animated using CSS Keyframes.
+                    Javascript handles the DOM manipulation and variable storage.  The Date constructor was sued to compare current date and time with the 
+                    stored data to determine if the countdown is complete or still counting down.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://ericd720.github.io/Custom-Countdown/"
+                >
+                  See Live
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/EricD720/Custom-Countdown"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a rel="noreferrer" href="https://ericd720.github.io/Custom-Countdown/" target="_blank">
+                  <div data-tilt class="thumbnail rounded js-tilt">
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/CustomCountDown.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+      <!-- Each .row is a project -->
+      <div class="row">
+        <div class="col-lg-4 col-sm-12">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">YelpCamp!</h3>
+            <div>
+              <p class="mb-4">
+                This is a fully functional, and deployed full stack web app.   It is an express app that uses RESTful routing via Express Router, 
+                and functions as a CRUD app.  MongoDB was used for the backend database.  
+                The separate pages are created using dynamic HTML with templating, each with their own random ID.
+                EJS was used for the templating and looping through the MongoDB to populate and display data onto the templates.
+                It has built in error handling using middleware that is both built in, and that was created specific for this web app.
+                Cookies are used used to assist with session management.  Authorization and authentication was implemented to allow the users to have their own secure accounts.
+                Other users have the ability to add reviews to each others content, but they cannot edit or delete content that they did not create.
+                The web app will also be secured from allowing users to do anything they want outside of the scope of the web app.  
+                A cluster map was also added and configued for the web app.
+              </p>
+            </div>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              class="cta-btn cta-btn--hero"
+              href="https://immense-gorge-78657.herokuapp.com/"
+            >
+              See Live
+            </a>
+            <!-- <a
+              rel="noreferrer"
+              target="_blank"
+              class="cta-btn text-color-main"
+              href="https://github.com/EricD720/Custom-Countdown"
+            >
+              Source Code
+            </a> -->
+          </div>
+        </div>
+        <div class="col-lg-8 col-sm-12">
+          <div class="project-wrapper__image">
+            <a rel="noreferrer" href="https://immense-gorge-78657.herokuapp.com/" target="_blank">
+              <div data-tilt class="thumbnail rounded js-tilt">
+                <img
+                  alt="Project Image"
+                  class="img-fluid"
+                  src="assets/yelpcamp.png"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /END Project -->
+
+
+
+        </div>
+      </div>
+    </section>
+    <!-- /END Projects Section -->
+
+    <!-- **** Contact Section **** -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-wrapper">
+          <p class="contact-wrapper__text">I would love to speak with you about joining your team!</p>
+          <a
+            rel="noreferrer"
+            target="_blank"
+            class="cta-btn cta-btn--resume"
+            href="mailto:ericd720@gmail.com"
+            >E-mail me</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- /END Contact Section -->
+
+    <!-- **** Footer Section **** -->
+    <footer class="footer navbar-static-bottom">
+      <div class="container">
+        <a rel="noreferrer" href="#top" class="back-to-top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <!-- <a rel="noreferrer" href="#!" target="_blank">
+            <i class="fa fa-twitter fa-inverse"></i>
+          </a>
+          <a rel="noreferrer" href="#!" target="_blank">
+            <i class="fa fa-codepen fa-inverse"></i> -->
+          </a>
+          <a rel="noreferrer" href="https://www.linkedin.com/in/eric-durand-1b899b200/" target="_blank">
+            <i class="fa fa-linkedin fa-inverse"></i>
+          </a>
+          <a rel="noreferrer" href="https://github.com/EricD720" target="_blank">
+            <i class="fa fa-github fa-inverse"></i>
+          </a>
+        </div>
+
+        <hr />
+
+     
+        <!-- Remove this paragraph once you setup your custom portfolio -->
+        <!-- <p class="mt-3 pt-3">
+          <a
+            rel="noreferrer"
+            class="github-button"
+            href="https://github.com/cobidev/simplefolio/fork"
+            data-icon="octicon-repo-forked"
+            data-size="large"
+            data-show-count="true"
+            aria-label="Fork ntkme/github-buttons on GitHub"
+            >Fork</a
+          >
+          <a
+            rel="noreferrer"
+            class="github-button"
+            href="https://github.com/cobidev/simplefolio"
+            data-icon="octicon-star"
+            data-size="large"
+            data-show-count="true"
+            aria-label="Star cobidev/simplefolio on GitHub"
+            >Star</a
+          > -->
+        </p>
+      </div>
+    </footer>
+    <!-- /END Footer Section -->
+  </body>
+</html>
